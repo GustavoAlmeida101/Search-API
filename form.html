@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="div_form">
+        
+        <form name="form" action="salvar.php" method="post">
+            <h3>Dados Principais</h3>
+            <label>Codigo: </label>
+            <input type="text" id="codigo" name="codigo" placeholder="codigo empresa" required>
+            <label>Nome/Razão Social:</label>
+            <input type="text" id="nomeempresa" name="nomeempresa" placeholder="nome da empresa" required>
+            <label>Nome Fantasia:</label>
+            <input type="text" id="nomefantasia" name="nomefantazia" placeholder="nome fantasia da empresa" required>
+            <label>Tipo Lougradoro:</label>
+            <select id="tipologa" name="tipolougradoro" required>
+                <option value="Rua">Rua</option>
+                <option value="Avenida">Avenida</option>
+                <option value="Travesa">Travessa</option>
+                <option value="Rodovia">Rodovia</option>
+                <option value="Via">Via</option>
+            </select>
+            <label>CPF/CNPJ: </label>
+            <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ/CPF" required>
+            <labe>Data Criação Empresa</label>
+                <input type="date" id="datainicio" name="data" required>
+                <label>Endereço: </label>
+                <input type="text" id="endereco" name="endereco" placeholder="endereço da empresa" required>
+                <label>Numero: </label>
+                <input type="text" id="numero" name="numero" placeholder="numero da empresa" required>
+                <label>Bairro: </label>
+                <input type="text" id="bairro" name="bairro" placeholder="bairro da empresa" required>
+                <label>Tipo de Complemento:</label>
+                <select id="tipocomplemento" name="tipocomplemento" required>
+                    <option value="APARTAMENTO">Apartamento</option>
+                    <option value="CASA">Casa</option>
+                    <option value="BLOCO">Bloco</option>
+                    <option value="ANDAR">Andar</option>
+                    <option value="FUNDOS">Fundos</option>
+                    <option value="PAVILHAO">Pavilhão</option>
+                    <option value="AVENIDA">Avenida</option>
+                </select>
+                <label>Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="complemento" required>
+                <label>Lougradoro:</label>
+                <input type="text" id="logradouro" name="lougradoro" placeholder="logradoro" required>
+                <label>CEP: </label>
+                <input type="text" id="cep" name="cep" placeholder="cep" required>
+                <label>Pais:</label>
+                <select id="pais" name="pais" required>
+                    <option value="BRASIL">Brasil</option>
+                    <option value="EUA">EUA</option>
+
+                </select>
+                <label>Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="RS">RS</option>
+                    <option value="SP">SP</option>
+                    <option value="PR">PR</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MT">MT</option>
+                    <option value="SC">SC</option>
+                </select>
+                <label>Cidade:</label>
+                <select id="cidade" name="cidade" required>
+                    <option value="Campinas">Campinas</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Coritiba">Coritiba</option>
+                    <option value="Rio de Janeiro">Rio De Janeiro</option>
+                    <option value="Jales">Jales</option>
+
+                </select>
+                <br>
+                <h3>Contato</h3>
+                <hr>
+                <label>Telefone 1:</label>
+                <input type="text" id="celular" name="celular" placeholder="(00)00000-0000" required>
+
+                <label>Telefone 2: </label>
+                <input type="text" id="telefone" name="telefone" placeholder="(00)00000-0000" >
+                <label>fax: </label>
+                <input type="text" id="fax" name="fax" placeholder="(00)00000-0000" required>
+                <label>Email 1 : </label>
+                <input type="text" id="email1" name="email1" placeholder="Email" required>
+                <label>Email 2: </label>
+                <input type="text" id="email2" name="email2" placeholder="Email" ><br>
+                
+                <button  type="submit" id="salvar" >salvar </button>
+        </form>
+
+    </div>
+    
+    <div id="empresas"></div>
+    <script src="./dados.js"></script>
+    <script src="./vali.js"></script>
+
+</body>
+
+</html>
